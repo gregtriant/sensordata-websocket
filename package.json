@@ -1,16 +1,20 @@
 {
   "name": "sensordata-websocket",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "type": "module",
+  "author": "Gregory Triantafyllidis",
+  "license": "MIT",
+  "description": "This package allows for easy websocket connection to sensordata.space, where data can be stored for various graphical representations.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregtriant/sensordata-websocket.git"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Gregory Triantafyllidis",
-  "license": "MIT",
-  "description": "This package allows for easy websocket connection to sensordata.space, where data can be stored for various graphical representations.",
   "dependencies": {
     "ws": "^8.18.0"
   },

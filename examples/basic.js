@@ -33,7 +33,9 @@ function receivedCommand(command) {
 function entityChanged(entity, value) {
     console.log(`Entity "${entity}" changed to ${value}`);
     if (entity === "led") {
-        status.led = value;
+        // the value is a string, so we need to convert it to a boolean
+        const newLedState = value === "1" ? true : false;
+        status.led = newLedState;
     }
     // (optional) send status back everytime am entity changes
     const saveToDB = false;
