@@ -63,14 +63,11 @@ function receivedCommand(command) {
 ### entityChanged()
 This function is called when an entity is changed on the server.  
 The device is informed of the `new value` of the entity.  
-The new value is always a `string` value.  
 ```js
 function entityChanged(entity, value) {
     console.log(`Entity "${entity}" changed to ${value}`);
     if (entity === "led") {
-        // the value is a string, so we need to convert it to a boolean
-        const newLedState = value === "1" ? true : false;
-        status.led = newLedState;
+        status.led = value;
     }
 }
 ```
