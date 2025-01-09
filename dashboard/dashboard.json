@@ -1,0 +1,237 @@
+[
+    [
+        {
+            "element": {
+                "type": "graph",
+                "entity": "cpuPercentage",
+                "label": "cpu",
+                "color": {
+                    "group": "secondary",
+                    "rgba": "rgba(156, 39, 176, 1)"
+                },
+                "width": "400px",
+                "height": "200px",
+                "borderWidth": 1,
+                "pointRadius": 1,
+                "chartType": "line",
+                "isStepped": false,
+                "showYAxisTicks": true,
+                "yMin": "",
+                "yMax": ""
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        },
+        {
+            "element": {
+                "type": "graph",
+                "entity": "memoryBytes",
+                "label": "memory",
+                "color": {
+                    "group": "primary",
+                    "rgba": "rgba(25, 118, 210, 1)"
+                },
+                "width": "400px",
+                "height": "200px",
+                "borderWidth": 1,
+                "pointRadius": 1,
+                "chartType": "line",
+                "isStepped": false,
+                "showYAxisTicks": true,
+                "yMin": "",
+                "yMax": ""
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        },
+        {
+            "element": {
+                "type": "graph",
+                "entity": "diskBytes",
+                "label": "disk",
+                "color": {
+                    "group": "success",
+                    "rgba": "rgba(46, 125, 50, 1)"
+                },
+                "width": "400px",
+                "height": "200px",
+                "borderWidth": 1,
+                "pointRadius": 1,
+                "chartType": "line",
+                "isStepped": false,
+                "showYAxisTicks": true,
+                "yMin": "",
+                "yMax": ""
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ],
+    [
+        {
+            "element": {
+                "type": "text",
+                "entity": "memoryBytesMax",
+                "label": "max mem: {}",
+                "fontWeight": "regular",
+                "fontSize": "default",
+                "letterSpacing": "1",
+                "bottomBorder": "0",
+                "displayAsCard": true
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        },
+        {
+            "element": {
+                "type": "text",
+                "entity": "diskBytesMax",
+                "label": "max disk: {}",
+                "fontWeight": "regular",
+                "fontSize": "default",
+                "letterSpacing": "1",
+                "bottomBorder": "0",
+                "displayAsCard": true
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ],
+    [
+        {
+            "element": {
+                "type": "graph",
+                "entity": "connectionHistory",
+                "label": "History",
+                "color": {
+                    "group": "primary",
+                    "rgba": "rgba(25, 118, 210, 1)"
+                },
+                "width": "400px",
+                "height": "150px",
+                "borderWidth": 1,
+                "pointRadius": 1,
+                "chartType": "line",
+                "isStepped": false,
+                "showYAxisTicks": true,
+                "yMin": "",
+                "yMax": ""
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ],
+    [
+        {
+            "element": {
+                "type": "input",
+                "label": "data refresh interval",
+                "color": {
+                    "group": "secondary",
+                    "rgba": "rgba(156, 39, 176, 1)"
+                }
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        },
+        {
+            "element": {
+                "type": "text",
+                "entity": "",
+                "label": "{\"name\": \"setInterval\", \"value\": 100}",
+                "fontWeight": "regular",
+                "fontSize": "default",
+                "letterSpacing": "1",
+                "bottomBorder": "0",
+                "displayAsCard": true
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ],
+    [
+        {
+            "element": {
+                "type": "input",
+                "label": "execute terminal command",
+                "color": ""
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        },
+        {
+            "element": {
+                "type": "text",
+                "entity": "",
+                "label": "{\"name\": \"executeTerminalCommand\", \"value\": \"New-Item -Name \\\"test01.txt\\\" -ItemType File\"}",
+                "fontWeight": "regular",
+                "fontSize": "default",
+                "letterSpacing": "1",
+                "bottomBorder": "0",
+                "displayAsCard": true
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ],
+    [
+        {
+            "element": {
+                "type": "text",
+                "entity": "commandResult",
+                "label": "{}",
+                "fontWeight": "regular",
+                "fontSize": "default",
+                "letterSpacing": "1",
+                "bottomBorder": "0",
+                "displayAsCard": true
+            },
+            "mouseOver": false,
+            "width": "150px",
+            "widthAuto": true,
+            "xPadding": "10px",
+            "yPadding": "5px",
+            "justify": "center"
+        }
+    ]
+]
