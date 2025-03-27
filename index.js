@@ -175,6 +175,25 @@ class SocketClient {
         }
         this.send(data);
     }
+
+    sendNotification(message, data) {
+        console.log("Sending Notification!", message);
+        let dataToSend = {
+            message: "notification",
+            body: message,
+            options: data
+        }
+        this.send(dataToSend);
+    }
+
+    sendLog(message, data) {
+        console.log("Sending Log!", message);
+        let dataToSend = {
+            message: "@log",
+            text: data,
+        }
+        this.send(dataToSend);
+    }
 }
 
 export default SocketClient;

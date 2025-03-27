@@ -110,6 +110,25 @@ sensordataClient.sendStatusWithSocket(saveToDB);
 
 This method internnally calls the `sendStatus` function (created earlier), to get the `current status` and then it sends the status to the server.
 
+### sendNotification(message, data)
+This function sends a notification to the server. According to the notification service that you have chosen, the notification will be sent to the user either with expo notifications or pushover.
+
+```js
+const message = "This is a notification message";
+const options = {
+    // ...pushover options (only if you are using pushover)
+}
+sensordataClient.sendNotification(message, options);
+```
+
+### sendLog(message)
+This function sends a log message to the server. The log message will be saved in the database and can be viewed in the logs section of the device settings.
+```js
+const message = "This is a log message";
+sensordataClient.sendLog(message);
+```
+
+
 ## Examples
 Check out the [examples](https://github.com/gregtriant/sensordata-websocket/tree/main/examples) folder for detailed usage scenarios:
 
