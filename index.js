@@ -186,11 +186,11 @@ class SocketClient {
         this.send(dataToSend);
     }
 
-    sendLog(message, data) {
-        console.log("Sending Log!", message);
+    sendLog(text) {
+        console.log("Sending Log!", text);
         let dataToSend = {
             message: "@log",
-            text: data,
+            text: text,
         }
         this.send(dataToSend);
     }
